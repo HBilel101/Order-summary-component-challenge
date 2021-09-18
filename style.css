@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+ html {
+     font-size: 16px;
+ }
+ @media screen and (max-width:1440px) {
+     html{
+         font-size: 14px;
+     }
+     .container {
+         width:44rem ;
+     }
+ }
+ @media screen and (width:1024px) {
+    html{
+        font-size: 13px;
+    } 
+    .container {
+        width: 66rem;
+        transform: translateY(30%);
+     }
+ }
+ @media screen and (max-width:700px) {
+    html{
+        font-size: 11px;
+    } 
+    .plan {
+        justify-content: space-between;
+    }
+ }
+ @media screen and (max-width:500px) {
+    .container{
+        width:85vw;/*40rem = 11*40 = 440px*/
+    }
+   
+ }
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+background: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg) hsl(225, 100%, 94%) ;
+background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+}
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 3rem auto;
+max-width: 40rem;
+background:#fff ;
+text-align:center;
+border: 0px solid transparent;
+border-radius: 16px;
+box-shadow: 0 10px 2em hsl(224, 23%, 75%);
+
+}
+
+.container .hero img {
+width: 100%;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
+
+}
+.container-content {
+    margin: 4em 0;
+}
+.summary {
+    width: 100%;
+    padding: 0 3em;
+    margin-bottom: 0.75em;
+}
+.container-content  .summary h1 {
+    font-size: 2rem;
+    font-weight:900;
+    margin-bottom: 0.75em;
+}
+.container-content .summary p {
+    font-size:1.5rem ;
+    font-weight:500 ;
+    line-height: 1.9;
+    color: hsl(224, 23%, 55%);
+    
+}
+
+
+
+
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.25rem;
+    margin:3em;
+    border-radius: 16px;
+    background: hsl(225, 100%, 98%);
+}
+
+
+
+.left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-box svg{
+margin-right: 1.5em;
+}
+.left-box_text h1 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color:hsl(223, 47%, 23%) ;
+}
+.left-box_text p {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.plan a {
+ color: hsl(245, 75%, 52%);
+ font-size: 1.125em;
+ font-weight: 700;
+}
+.plan a:hover,
+.plan a:active{
+opacity: 0.8;   
+}  
+.action-call {
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 0 2em;
+}
+.action-call .btn {
+    display: block;
+    width:100%;
+    margin: 1em 0 ;
+    padding: 1em;
+    background:none ;
+    border: none;
+    cursor: pointer;
+}
+.action-call .btn:first-child {
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    border-radius: 0.6em;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-top: 1em;
+    box-shadow: 0 10px 2em hsl(224, 23%, 75%);
+}
+.action-call .btn:first-child:hover {
+    opacity: 0.8;
+}
+.action-call .btn:last-child {
+    margin: 2em  auto 0;
+    font-weight: 700;
+    font-size: 1.125em;
+    color: hsl(224, 23%, 55%);
+}
+.action-call .btn:last-child:hover {
+    color:#000;
+}

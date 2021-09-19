@@ -34,6 +34,9 @@
     .plan {
         justify-content: space-between;
     }
+      .left-box {
+        margin-right: 0.9rem;
+    }
  }
  @media screen and (max-width:500px) {
     .container{
